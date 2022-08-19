@@ -34,6 +34,10 @@ const Header = (props) => {
                 <span>SERIES</span>
             </a>    
         </NavMenu>
+
+        <Login>
+            Login
+        </Login>
     </Nav>
   )
 }
@@ -129,6 +133,24 @@ const NavMenu = styled.div`
 
   @media (max-width: 768px){  /** max-width: 768 -->> it will works when screen will be small than 768 */  /** if min-width: 768px --> the code works when the screen size bigger than 768 */
     display: none;
+  }
+`;
+
+const  Login = styled.a`
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  transition: all .2s ease 0s;
+
+  &:hover{
+    background-color: #f9f9f9;
+    color: #000;
+    cursor: pointer;
+    border-color: transparent;
+    
   }
 `;
 
