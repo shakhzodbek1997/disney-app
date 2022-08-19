@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Header from './components/Header';
 
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -13,10 +14,15 @@ function App() {
       <Router>
         <Header />
         <Switch>
+          
           <Route exact path="/">
             <Login />
-            <h1>Hello App file</h1>
           </Route>
+          
+          <Route path="/home">
+            <Home />
+          </Route>
+        
         </Switch>
       </Router>
     </div>
