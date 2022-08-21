@@ -78,3 +78,7 @@ Sign in method is made with Google fire base
 // i am going to use redux to store all information somwhere and access them later 
 1. npm install react-redux
 2. npm install @reduxjs/toolkit <<< this toolkit is designed to make it easy to using redux>>>
+
+3. npm install react-slick --save
+4. npm install slick-carousel
+5. 
