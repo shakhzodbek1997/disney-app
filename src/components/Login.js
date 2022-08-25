@@ -6,14 +6,14 @@ const Login = (props) => {
     <Container>
       <Content>
         <CTA>
-            <CTALogoOne src="/images/cta-logo-one.svg " alt="top Logos "/>
-            <SignUp>GET ALL THERE</SignUp>
-            <Description>
-                Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry.And more recently with desktop publishing software like Aldus 
-                PageMaker including versions of Lorem Ipsum.
-            </Description>
-            <CTALogoTwo src="/images/cta-logo-two.png" alt="second Brand logo" />
+          <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
+          <SignUp>GET ALL THERE</SignUp>
+          <Description>
+            Get Premier Access to Raya and the Last Dragon for an additional fee
+            with a Disney+ subscription. As of 03/26/21, the price of Disney+
+            and The Disney Bundle will increase by $1.
+          </Description>
+          <CTALogoTwo src="/images/cta-logo-two.png" alt="" />
         </CTA>
         <BgImage />
       </Content>
@@ -30,14 +30,14 @@ const Container = styled.section`
 `;
 
 const Content = styled.div`
-  margin-bottom: 10vw; /*Viewport Width*/
-  width: 100%;
-  position: relative; 
+  margin-bottom: 10vw;
+  width: 800;
+  position: relative;
   min-height: 100vh;
   box-sizing: border-box;
   display: flex;
-  justify-content: center; /* Horizontally centered */
-  align-items: center;  /** Vertically centered */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 80px 40px;
   height: 100%;
@@ -53,19 +53,19 @@ const BgImage = styled.div`
   top: 0;
   right: 0;
   left: 0;
-  z-index: -1; /** it means -> very low priority all times >> when i add more staff on top of this*/
+  z-index: -1;
 `;
 
 const CTA = styled.div`
   max-width: 650px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
 `;
 
 const CTALogoOne = styled.img`
   margin-bottom: 12px;
-  max-width: 600pc;
+  max-width: 600px;
   min-height: 1px;
   display: block;
   width: 100%;
@@ -82,7 +82,6 @@ const SignUp = styled.a`
   padding: 16.5px 0;
   border: 1px solid transparent;
   border-radius: 4px;
-
   &:hover {
     background-color: #0483ee;
   }
@@ -102,6 +101,6 @@ const CTALogoTwo = styled.img`
   display: inline-block;
   vertical-align: bottom;
   width: 100%;
-`
+`;
 
 export default Login;
