@@ -8,7 +8,7 @@ const firebaseConfig = {
   projectId: "disney-clone-92812",
   storageBucket: "disney-clone-92812.appspot.com",
   messagingSenderId: "734795365122",
-  appId: "1:734795365122:web:ed09e23f74a10b2573a01b",
+  appId: "1:734795365122:web:ed09e23 f74a10b2573a01b",
   measurementId: "G-8EBP0CDR62"
 };
 
